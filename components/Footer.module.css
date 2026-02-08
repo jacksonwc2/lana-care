@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: var(--spacing-md) var(--spacing-md);
+  border-top: 1px solid rgba(248, 247, 243, 0.2);
+  background: var(--color-olive);
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.footerText {
+  font-size: 0.875rem;
+  color: var(--color-off);
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+  
+  .footerText {
+    font-size: 0.9rem;
+  }
+}

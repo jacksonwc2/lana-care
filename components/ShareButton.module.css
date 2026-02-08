@@ -1,0 +1,103 @@
+.shareWrapper {
+  position: fixed;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  z-index: 1000;
+}
+
+.shareButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-off);
+  border: none;
+  color: var(--color-olive-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  pointer-events: auto;
+}
+
+.shareButton:active {
+  transform: scale(0.95);
+  background: rgba(248, 247, 243, 0.95);
+}
+
+.shareButton:focus-visible {
+  outline: 2px solid var(--color-olive);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+.shareButton svg {
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+.shareMenu {
+  position: absolute;
+  top: calc(100% + var(--spacing-xs));
+  right: 0;
+  background: var(--color-off);
+  border-radius: 12px;
+  padding: var(--spacing-xs);
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.shareOption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  color: var(--color-olive-dark);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  font-size: 0.95rem;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shareOption:active {
+  background: rgba(112, 138, 77, 0.1);
+  transform: scale(0.98);
+}
+
+.shareIcon {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  width: 24px;
+  pointer-events: none;
+}
+
+.shareText {
+  font-weight: 500;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .shareButton svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .shareMenu {
+    min-width: 200px;
+  }
+}
