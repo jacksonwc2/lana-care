@@ -39,7 +39,7 @@ export default function ContactButton() {
         whileHover={buttonHover}
         whileTap={buttonTap}
       >
-        <span className={styles.buttonText}>Fale com Lana</span>
+        <span className={styles.buttonText}>WhatsApp</span>
         <span className={styles.buttonIcon} aria-hidden="true">
           💬
         </span>

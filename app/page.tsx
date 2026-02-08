@@ -3,6 +3,7 @@ import ContactButton from '@/components/ContactButton'
 import DescriptionText from '@/components/DescriptionText'
 import ShareButton from '@/components/ShareButton'
 import Footer from '@/components/Footer'
+import ArrowIndicator from '@/components/ArrowIndicator'
 import styles from './page.module.css'
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
           </div>
           <div className={styles.centerSection}>
             <DescriptionText />
+            <ArrowIndicator />
           </div>
           <div className={styles.bottomSection}>
             <ContactButton />

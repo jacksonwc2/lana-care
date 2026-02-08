@@ -1,0 +1,38 @@
+.arrowContainer {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.arrowContainer:hover {
+  opacity: 0.8;
+}
+
+.arrowContainer:active {
+  transform: scale(0.95);
+}
+
+.arrow {
+  color: var(--color-off);
+  opacity: 0.8;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.arrowContainer:hover .arrow {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .arrow {
+    width: 28px;
+    height: 28px;
+  }
+}
